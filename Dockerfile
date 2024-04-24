@@ -28,15 +28,15 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN python /code/prediction_model/training_pipeline.py
 
-EXPOSE 8005
+# EXPOSE 8005
 
-# WORKDIR /code/src
+# # WORKDIR /code/src
 
-# ENV PYTHONPATH "${PYTHONPATH}:/code/src"
+# # ENV PYTHONPATH "${PYTHONPATH}:/code/src"
 
-ENTRYPOINT ["python"]
+# ENTRYPOINT ["python"]
 
-CMD ["main.py"]
+# CMD ["main.py"]
 
 
 # CMD pip install -e .
