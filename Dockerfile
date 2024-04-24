@@ -17,6 +17,9 @@ COPY . /code
 
 RUN chmod +x /code/prediction_model
 
+RUN chmod +w /code/prediction_model/trained_models
+
+
 ENV PYTHONPATH "${PYTHONPATH}:/code/prediction_model"
 
 # RUN pip install --no-cache-dir --upgrade -r code/src/requirements.txt
